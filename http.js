@@ -2,6 +2,7 @@ const http = require('http');
 
 /**
  * request it is an instance of ReadableStream
+ * response is a instance of WritableStream
  */
 http.createServer((request, response) => {
     const { headers, method, url } = request;
@@ -36,7 +37,6 @@ http.createServer((request, response) => {
         // Note: the 2 lines above could be replaced with this next one:
         // response.end(JSON.stringify(responseBody))
 
-        // END OF NEW STUFF
     });
 }).listen(8080); // Activates this server, listening on port 8080.
 
