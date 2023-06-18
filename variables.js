@@ -2,12 +2,12 @@
 var i = 0;
 var j = 2;
 
-function changeJ() {
+function changeI() {
     i = 222; // variable of outer scope is accessed
     var j = 22;
 }
 
-changeJ();
+changeI();
 console.log(i);
 console.log(j);
 
